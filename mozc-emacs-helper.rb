@@ -21,7 +21,9 @@ class MozcEmacsHelper < Formula
 
   def caveats
     msg = <<-EOF.undent
-Please restart your operating system.
+To have launchd start mozc-emacs-helper at login:
+    sudo launchctl load /Library/LaunchAgents/org.mozc.inputmethod.Japanese.Converter.plist
+    sudo launchctl load /Library/LaunchAgents/org.mozc.inputmethod.Japanese.Renderer.plist
 EOF
   end
 end
