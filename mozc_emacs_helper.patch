@@ -1,0 +1,20 @@
+diff --git a/src/mac/mac.gyp b/src/mac/mac.gyp
+index 9cf0cf4f..435f8765 100644
+--- a/src/mac/mac.gyp
++++ b/src/mac/mac.gyp
+@@ -49,6 +49,7 @@
+         '../renderer/renderer.gyp:renderer_client',
+         '../session/session_base.gyp:ime_switch_util',
+         '../testing/testing.gyp:gtest_main',
++        '../unix/emacs/emacs.gyp:mozc_emacs_helper',
+         'gen_key_mappings',
+       ],
+       'variables': {
+@@ -585,7 +586,6 @@
+             ['branding=="GoogleJapaneseInput"', {
+               'dependencies': [
+                 'DevConfirmPane',
+-                'codesign_client',
+               ],
+             }],
+           ],

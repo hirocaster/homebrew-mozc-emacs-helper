@@ -16,6 +16,7 @@ class MozcEmacsHelper < Formula
 
     system "pwd"
     system "cp -r /Users/yusuke/mozc ."
+    # system "git clone https://github.com/google/mozc.git -b 2018-02-26 --single-branch --recursive"
     Dir.chdir "mozc" do
       system "pwd"
       system 'cp /Users/yusuke/mozc_emacs_helper.patch .'
